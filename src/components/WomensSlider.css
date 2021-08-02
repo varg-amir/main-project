@@ -1,0 +1,11 @@
+.filter-items li a{
+    color: rgb(34, 34, 34) !important;
+   font-size: larger;
+   font-weight: 400;
+}
+
+.filter-items li a p{
+    border-bottom: 2px solid rgb(36, 36, 36);
+    padding: 4px 0;
+}
+
