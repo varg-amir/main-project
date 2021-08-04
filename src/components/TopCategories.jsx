@@ -15,7 +15,7 @@ function TopCategories() {
               <Card className="bg-dark text-white border-0  ">
                 <Card.Img src={Img1} alt="Card image" className='rounded-0' />
                 <Card.ImgOverlay className='d-flex justify-content-center align-items-center'>
-                  <div className='bg-white d-inline-block px-3 py-2 rounded-1'><h3 className='m-0 text-dark'>Kid's</h3></div>
+                  <div className='bg-white d-inline-block px-3 py-2 rounded-1'><h3 className='m-0 text-dark'>کودک</h3></div>
                 </Card.ImgOverlay>
               </Card>
             </div>
@@ -25,7 +25,7 @@ function TopCategories() {
               <Card className="bg-dark text-white border-0  ">
                 <Card.Img src={Img2} alt="Card image" className='rounded-0' />
                 <Card.ImgOverlay className='d-flex justify-content-center align-items-center'>
-                  <div className='bg-white d-inline-block px-3 py-2 rounded-1'><h3 className='m-0 text-dark'>Womens</h3></div>
+                  <div className='bg-white d-inline-block px-3 py-2 rounded-1'><h3 className='m-0 text-dark'>زنانه</h3></div>
                 </Card.ImgOverlay>
               </Card>
             </div>
@@ -35,7 +35,7 @@ function TopCategories() {
               <Card className="bg-dark text-white border-0  ">
                 <Card.Img src={Img3} alt="Card image" className='rounded-0' />
                 <Card.ImgOverlay className='d-flex justify-content-center align-items-center'>
-                  <div className='bg-white d-inline-block px-3 py-2 rounded-1'><h3 className='m-0 text-dark'>Mens</h3></div>
+                  <div className='bg-white d-inline-block px-3 py-2 rounded-1'><h3 className='m-0 text-dark'>مردانه</h3></div>
                 </Card.ImgOverlay>
               </Card>
             </div>

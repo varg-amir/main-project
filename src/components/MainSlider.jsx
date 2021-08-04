@@ -2,6 +2,7 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 import Slider1 from '../assets/mainslider-img1.PNG'
 import Slider2 from '../assets/mainslider-img2.PNG'
+import './MainSlider.css'
 
 function MainSlider() {
   return (

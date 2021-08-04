@@ -7,7 +7,7 @@ import WomensSlider from "../../components/WomensSlider";
 function home() {
   return (
     <div>
-    <NavBar/>
+    <NavBar />
     <MainSlider/>
     <TopCategories/>
     <WomensSlider/>
