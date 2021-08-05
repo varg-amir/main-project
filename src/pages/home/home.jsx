@@ -5,6 +5,8 @@ import TopCategories from "../../components/TopCategories";
 import WomensSlider from "../../components/WomensSlider";
 import CountdownSec from "../../components/CountdownSec";
 import MensSlider from "../../components/MensSlider";
+import Features from "../../components/Features";
+import Footer from '../../components/Footer'
 
 function home() {
   return (
@@ -15,6 +17,8 @@ function home() {
     <WomensSlider/>
     <CountdownSec/>
     <MensSlider/>
+    <Features/>
+    <Footer/>
     </div>
   );
 }
