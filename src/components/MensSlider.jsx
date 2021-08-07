@@ -240,7 +240,7 @@ function WomensSlider() {
             </div>
           </Col>
           <Col lg={3}>
-            <div className="slider-big-img">
+            <div className="slider-big-img2">
               <div className="d-flex justify-content-center align-items-center h-100">
                 <div className=" d-inline-block px-3 py-2 rounded-1 d-flex flex-column justify-content-center align-items-center">
                   <h3 className="m-0 text-white mb-3">مردانه</h3>
