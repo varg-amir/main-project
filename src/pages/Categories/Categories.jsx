@@ -5,11 +5,12 @@ import CardTemplate from "../../components/CardTemplate";
 import { MdHome } from "react-icons/md";
 import { Breadcrumb, Col, Container, Row } from "react-bootstrap";
 import "./Categories.css";
+import products from '../../Products'
 
 function Categories() {
   return (
     <div>
-      <NavBar />
+      
       <Container className="border-bottom ">
         <ul class="breadcrumb mb-0 d-flex align-items-center">
           <li className="text-center">
@@ -111,39 +112,19 @@ function Categories() {
                 </div>
               </div>
               <Row className="w-100">
-                <Col md={6} lg={4}>
-                  <CardTemplate />
+                {products.map((product) => (
+                  <Col md={6} lg={4}>
+                  <CardTemplate product={product}/>
                 </Col>
-                <Col md={6} lg={4}>
-                  <CardTemplate />
-                </Col>
-                <Col md={6} lg={4}>
-                  <CardTemplate />
-                </Col>
-                <Col md={6} lg={4}>
-                  <CardTemplate />
-                </Col>
-                <Col md={6} lg={4}>
-                  <CardTemplate />
-                </Col>
-                <Col md={6} lg={4}>
-                  <CardTemplate />
-                </Col>
-                <Col md={6} lg={4}>
-                  <CardTemplate />
-                </Col>
-                <Col md={6} lg={4}>
-                  <CardTemplate />
-                </Col>
-                <Col md={6} lg={4}>
-                  <CardTemplate />
-                </Col>
+                ))}
+                
+                
               </Row>
             </Col>
           </Row>
         </Container>
       </div>
-      <Footer />
+      
     </div>
   );
 }

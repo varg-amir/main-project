@@ -11,14 +11,14 @@ import Footer from '../../components/Footer'
 function home() {
   return (
     <div>
-    <NavBar />
+    
     <MainSlider/>
     <TopCategories/>
     <WomensSlider/>
     <CountdownSec/>
     <MensSlider/>
     <Features/>
-    <Footer/>
+    
     </div>
   );
 }

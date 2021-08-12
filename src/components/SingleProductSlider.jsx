@@ -43,16 +43,16 @@ export default class SingleProductSlider extends Component {
               arrows={false}
             >
               <div>
-                <SingleCard />
+                <SingleCard image={this.props.product.image}/>
               </div>
               <div>
-                <SingleCard />
+                <SingleCard image={this.props.product.image}/>
               </div>
               <div>
-                <SingleCard />
+                <SingleCard image={this.props.product.image}/>
               </div>
               <div>
-                <SingleCard />
+                <SingleCard image={this.props.product.image}/>
               </div>
             </Slider>
           </Col>
@@ -70,16 +70,16 @@ export default class SingleProductSlider extends Component {
               rtl={true}
             >
               <div>
-                <SingleCard />
+                <SingleCard image={this.props.product.image}/>
               </div>
               <div>
-                <SingleCard />
+                <SingleCard image={this.props.product.image}/>
               </div>
               <div>
-                <SingleCard />
+                <SingleCard image={this.props.product.image}/>
               </div>
               <div>
-                <SingleCard />
+                <SingleCard image={this.props.product.image}/>
               </div>
             </Slider>
           </Col>

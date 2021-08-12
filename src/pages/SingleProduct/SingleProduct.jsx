@@ -4,12 +4,15 @@ import Footer from "../../components/Footer";
 import SingleProductSlider from "../../components/SingleProductSlider";
 import { MdHome, MdStar, MdStarBorder, MdShoppingCart } from "react-icons/md";
 import { Container, Row, Col, Button, Tab, Tabs } from "react-bootstrap";
+import products from '../../Products'
 import "./SingleProduct.css";
 
-function SingleProduct() {
+function SingleProduct({match}) {
+
+  const product = products.find((p) => p._id === match.params.id)
   return (
     <div>
-      <NavBar />
+      
       <Container>
         <ul class="breadcrumb mb-5 d-flex align-items-center border-bottom ">
           <li className="text-center">
@@ -25,11 +28,11 @@ function SingleProduct() {
         </ul>
         <Row>
           <Col lg={6}>
-            <SingleProductSlider />
+            <SingleProductSlider product={product}/>
           </Col>
           <Col lg={6} className="d-flex flex-column ">
-            <h3>جاکت چرم مدل بلیزر</h3>
-            <p className="text-muted mb-4">برند: ال سی وایکیکی</p>
+            <h3>{product.name}</h3>
+            <p className="text-muted mb-4">برند: {product.brand}</p>
             <div>
               <MdStar className="text-warning" />
               <MdStar className="text-warning" />
@@ -38,11 +41,9 @@ function SingleProduct() {
               <MdStarBorder className="text-warning" />
               (119 نظر)
             </div>
-            <h5 className="mt-4 single-price">75,000 تومان</h5>
+            <h5 className="mt-4 single-price">{product.price} تومان</h5>
             <p className="fw-lighter lh-lg mb-4">
-              پیراهن مردانه - دارای یقه برگردان و آستین‌های بلند - باز و بسته
-              شدن از طریق یک ردیف دکمه - دارای یک جیب روی سینه - مناسب استفاده
-              روزمره - اندازه‌ لباس برای سایز L برابر 76 سانتیمتر
+              {product.description}
             </p>
             <div className="d-flex align-items-center border-bottom pb-4">
               <div className="ms-3">تعداد: </div>
@@ -58,7 +59,7 @@ function SingleProduct() {
             </div>
             <div className="d-flex align-items-center mt-5">
               <span className="fw-bold ms-4">موجودی: </span>
-              <span>موجود</span>
+              <span>{product.countInStock}</span>
             </div>
             <div className="d-flex align-items-center mt-3">
               <span className="fw-bold ms-4">رنگ های موجود: </span>{" "}
@@ -153,7 +154,7 @@ function SingleProduct() {
         </Tabs>
       </Container>
 
-      <Footer />
+      
     </div>
   );
 }

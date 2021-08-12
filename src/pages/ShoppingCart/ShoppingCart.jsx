@@ -17,7 +17,7 @@ import './ShoppingCart.css'
 function ShoppingCart() {
   return (
     <div>
-      <Navbar />
+      
       <Container className="pb-5">
         <ul class="breadcrumb mb-5 d-flex align-items-center border-bottom ">
           <li className="text-center">
@@ -128,7 +128,7 @@ function ShoppingCart() {
           </Col>
         </Row>
       </Container>
-      <Footer />
+      
     </div>
   );
 }
